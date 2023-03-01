@@ -1,0 +1,83 @@
+cradle:
+  multi:
+    - path: "./test-generated"
+      config:
+        cradle:
+          none:
+    - path: "./build"
+      config:
+        cradle:
+          none:
+    - path: "./out"
+      config:
+        cradle:
+          none:
+    - path: "./"
+      config:
+        cradle:
+          cabal:
+            - path: "src"
+              component: "lib:hs-effects"
+
+            - path: "app/Main.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Main.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/DTC.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/ScopedToSmall.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/ShallowToSmall.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/SmallToDeep.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/Writing/AlgebraicFreer.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/Writing/DanvySimple.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/Writing/Monad.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Final/Writing/VeselySimple.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "app/Paths_hs_effects.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/DTC.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/ScopedToSmall.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/ShallowToSmall.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/SmallToDeep.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/Writing/AlgebraicFreer.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/Writing/DanvySimple.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/Writing/Monad.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Final/Writing/VeselySimple.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "src/Paths_hs_effects.hs"
+              component: "hs-effects:exe:hs-effects-exe"
+
+            - path: "test"
+              component: "hs-effects:test:hs-effects-test"

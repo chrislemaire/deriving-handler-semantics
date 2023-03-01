@@ -1,0 +1,9 @@
+.stack-work/
+*~
+.idea
+out/
+*.iml
+test-generated
+dist-newstyle
+*.lock
+cabal.project.local
